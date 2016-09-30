@@ -1,0 +1,39 @@
+#########################
+#                       #
+# D&D GENERATOR v0.0.2b #
+#                       #
+#########################
+import random
+#
+#randomly selects gender
+#
+charGender = ['Gender: Male', 'Gender: Female']
+print charGender[int(random.random() * len(charGender))]
+#
+#randomly selects class
+#
+charClass = ['Class: Fighter', 'Class: Rogue', 'Class: Cleric', 'Class: Mage', 'Class: Druid', 'Class: Monk', 'Class: Paladin', 'Class: Ranger', 'Class: Sorcerer', 'Class: Warlock', 'Class: Wizard', 'Class: Barbarian', 'Class: Bard']
+print charClass[int(random.random() * len(charClass))]
+#
+#randomly selects race
+#
+charRace = ['Race: Aarakocra','Race: Aasimar', 'Race: Anthropomorphic Mouse', 'Race: Changeling', 'Race: Elf', 'Race: Goblin', 'Race: Human', 'Race: Kor', 'Race: Merfolk', 'Race: Minotaur', 'Race: Revenant', 'Race: Shifter', 'Race: Tiefling', 'Race: Vampire', 'Race: Warforged']
+print charRace[int(random.random() * len(charClass))]
+#
+#randomly selects alignment
+#
+charAlignment = ['Alignment: Lawful-Good','Alignment: Neutral-Good', 'Alignment: Chaotic-Good', 'Alignment: Lawful-Neutral', 'Alignment: Neutral', 'Alignment: Chaotic-Neutral', 'Alignment: Lawful-Evil', 'Alignment: Neutral-Evil', 'Alignment: Chaotic-Evil']
+print charAlignment[int(random.random() * len(charAlignment))]
+#
+#randomly generates character statistics
+#
+print '=========='
+def character():
+    print "CHARACTER STATS"
+    print "STR", random.randint(8, 21)
+    print "DEX", random.randint(8, 21)
+    print "CON", random.randint(8, 21)
+    print "INT", random.randint(8, 21)
+    print "WIS", random.randint(8,21)
+    print "CHA", random.randint(8, 21)
+character()
