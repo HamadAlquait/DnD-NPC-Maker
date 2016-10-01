@@ -1,27 +1,30 @@
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Random;
 
-package dndchrrndmzr;
 public class DnDRandomizer {
-    public static void main(String[] args){
-    
-                System.out.println("*********************************");
-		System.out.println("*    WELCOME TO DND CHARACTER   *");
-		System.out.println("*          RANDOMIZER           *");
-		System.out.println("*      ORIGINALLY MADE BY       *");
-		System.out.println("*       PATRICK IN PYTHON       *");
-		System.out.println("*      REMADE WITH JAVA BY      *");
-		System.out.println("*         HAMAD ALQUAIT         *");
-		System.out.println("*                               *");
-		System.out.println("*********************************");
-		
-		// Gender
-                List<String> list = new ArrayList<>();
-        	list.add("Gender: Male");
-      		list.add("Gender: Female");
-       		 	String random = list.get(new Random().nextInt(list.size()));
-       			System.out.println(" Your "+ random);
-		
-		//class
-	List<String> classlist = new ArrayList<>(); 
+ 
+public static void main(String[] args){
+     
+System.out.println("*********************************");
+System.out.println("*    WELCOME TO DND CHARACTER   *");
+System.out.println("*          RANDOMIZER           *");
+System.out.println("*      ORIGINALLY MADE BY       *");
+System.out.println("*       PATRICK IN PYTHON       *");
+System.out.println("*      REMADE WITH JAVA BY      *");
+System.out.println("*         HAMAD ALQUAIT         *");
+System.out.println("*                               *");
+System.out.println("*********************************");
+                
+       //random gender         
+    List<String> Genderlist = new ArrayList<>();
+        Genderlist.add("Gender: Male");
+        Genderlist.add("Gender: Female");
+            String randomGender = Genderlist.get(new Random().nextInt(Genderlist.size()));
+                System.out.println(" Your "+ randomGender); 
+                
+         // random class       
+    List<String> classlist = new ArrayList<>(); 
             classlist.add("Class: Fighter");
             classlist.add("Class: Rogue");
             classlist.add("Class: Cleric");
@@ -37,7 +40,8 @@ public class DnDRandomizer {
             classlist.add("Class: Bard");
                 String randomClass = classlist.get(new Random().nextInt(classlist.size()));
                 System.out.println(" Your "+ randomClass); 
-		   //random race
+
+   //random race
        List<String> racelist = new ArrayList<>(); 
             racelist.add("Race: Aarakocra");
             racelist.add("Race: Aasimar");
@@ -56,8 +60,9 @@ public class DnDRandomizer {
             racelist.add("Race: Warforged");
                 String randomRace = racelist.get (new Random() .nextInt(classlist.size()));
                                     System.out.println(" Your "+ randomRace); 
-		//Alingment
-		         List<String> alignmentlist = new ArrayList<>(); 
+
+   // random alignment
+          List<String> alignmentlist = new ArrayList<>(); 
                 alignmentlist.add("Alignment: Lawful-Good");
                 alignmentlist.add("Alignment: Neutral-Good");
                 alignmentlist.add("Alignment: Chaotic-Good");
@@ -69,6 +74,22 @@ public class DnDRandomizer {
                 alignmentlist.add("Alignment: Chaotic-Evil");
                     String randomAlignment = alignmentlist.get(new Random() .nextInt(alignmentlist.size()));
                                        System.out.println(" Your "+ randomAlignment); 
-				       
-    }
+         
+                /*GetGender test1 = new GetGender();
+                System.out.println("Your Gender is :" );
+               // ArrayList<Gender> list = new ArrayList<Gender>();
+               /* Gender mGENDER = new Gender;
+                list.add(new Gender(1,2));
+                
+                String [] Gender = {"Gender: Male" , "Gender: Female"};
+                Random random = new Random();
+                        int select = random.nextInt(Gender.length);
+                                 System.out.println("Random char selected: " + Gender.charAt(select)); 
 }
+                private static void createNewCharacter() throws IOException {
+                    int CharNumber=1000;
+			System.out.println("Please enter a name:");
+                }
+    */
+ 
+    }}
