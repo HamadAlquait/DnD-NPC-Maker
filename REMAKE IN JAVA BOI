@@ -1,5 +1,5 @@
 
-package teameval;
+package dndchrrndmzr;
 public class DnDRandomizer {
     public static void main(String[] args){
     
@@ -37,7 +37,25 @@ public class DnDRandomizer {
             classlist.add("Class: Bard");
                 String randomClass = classlist.get(new Random().nextInt(classlist.size()));
                 System.out.println(" Your "+ randomClass); 
-		
+		   //random race
+       List<String> racelist = new ArrayList<>(); 
+            racelist.add("Race: Aarakocra");
+            racelist.add("Race: Aasimar");
+            racelist.add("Race: Anthropomorphic Mouse");
+            racelist.add("Race: Changeling");
+            racelist.add("Race: Elf");
+            racelist.add("Race: Goblin");
+            racelist.add("Race: Human");
+            racelist.add("Race: Kor");
+            racelist.add("Race: Merfolk");
+            racelist.add("Race: Minotaur");
+            racelist.add("Race: Revenant");
+            racelist.add("Race: Shifter");
+            racelist.add("Race: Tiefling");
+            racelist.add("Race: Vampire");
+            racelist.add("Race: Warforged");
+                String randomRace = racelist.get (new Random() .nextInt(classlist.size()));
+                                    System.out.println(" Your "+ randomRace); 
 		//Alingment
 		         List<String> alignmentlist = new ArrayList<>(); 
                 alignmentlist.add("Alignment: Lawful-Good");
