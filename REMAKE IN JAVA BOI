@@ -17,5 +17,23 @@ public class DnDRandomizer {
       		list.add("Gender: Female");
        		 	String random = list.get(new Random().nextInt(list.size()));
        			System.out.println(" Your "+ random);
+		
+		
+	List<String> classlist = new ArrayList<>(); 
+            classlist.add("Class: Fighter");
+            classlist.add("Class: Rogue");
+            classlist.add("Class: Cleric");
+            classlist.add("Class: Mage");
+            classlist.add("Class: Druid");
+            classlist.add("Class: Monk");
+            classlist.add("Class: Paladin");
+            classlist.add("Class: Ranger");
+            classlist.add("Class: Sorcerer");
+            classlist.add("Class: Warlock");
+            classlist.add("Class: Wizard");
+            classlist.add("Class: Barbarian");
+            classlist.add("Class: Bard");
+                String randomClass = classlist.get(new Random().nextInt(classlist.size()));
+                System.out.println(" Your "+ randomClass); 
     }
 }
