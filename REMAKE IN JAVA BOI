@@ -1,0 +1,17 @@
+
+package teameval;
+public class DnDRandomizer {
+    public static void main(String[] args){
+    
+                System.out.println("*********************************");
+		System.out.println("*    WELCOME TO DND CHARACTER   *");
+		System.out.println("*          RANDOMIZER           *");
+		System.out.println("*      ORIGINALLY MADE BY       *");
+		System.out.println("*       PATRICK IN PYTHON       *");
+		System.out.println("*      REMADE WITH JAVA BY      *");
+		System.out.println("*         HAMAD ALQUAIT         *");
+		System.out.println("*                               *");
+		System.out.println("*********************************");
+                
+    }
+}
