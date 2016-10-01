@@ -35,5 +35,17 @@ public class DnDRandomizer {
             classlist.add("Class: Bard");
                 String randomClass = classlist.get(new Random().nextInt(classlist.size()));
                 System.out.println(" Your "+ randomClass); 
+		         List<String> alignmentlist = new ArrayList<>(); 
+                alignmentlist.add("Alignment: Lawful-Good");
+                alignmentlist.add("Alignment: Neutral-Good");
+                alignmentlist.add("Alignment: Chaotic-Good");
+                alignmentlist.add("Alignment: Lawful-Neutral");
+                alignmentlist.add("Alignment: Neutral");
+                alignmentlist.add("Alignment: Chaotic-Neutral");
+                alignmentlist.add("Alignment: Lawful-Evil");
+                alignmentlist.add("Alignment: Neutral-Evil");
+                alignmentlist.add("Alignment: Chaotic-Evil");
+                    String randomAlignment = alignmentlist.get(new Random() .nextInt(alignmentlist.size()));
+                                       System.out.println(" Your "+ randomAlignment); 
     }
 }
