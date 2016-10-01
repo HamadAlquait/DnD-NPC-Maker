@@ -12,6 +12,10 @@ public class DnDRandomizer {
 		System.out.println("*         HAMAD ALQUAIT         *");
 		System.out.println("*                               *");
 		System.out.println("*********************************");
-                
+                List<String> list = new ArrayList<>();
+        	list.add("Gender: Male");
+      		list.add("Gender: Female");
+       		 	String random = list.get(new Random().nextInt(list.size()));
+       			System.out.println(" Your "+ random);
     }
 }
