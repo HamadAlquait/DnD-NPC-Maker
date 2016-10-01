@@ -12,13 +12,15 @@ public class DnDRandomizer {
 		System.out.println("*         HAMAD ALQUAIT         *");
 		System.out.println("*                               *");
 		System.out.println("*********************************");
+		
+		// Gender
                 List<String> list = new ArrayList<>();
         	list.add("Gender: Male");
       		list.add("Gender: Female");
        		 	String random = list.get(new Random().nextInt(list.size()));
        			System.out.println(" Your "+ random);
 		
-		
+		//class
 	List<String> classlist = new ArrayList<>(); 
             classlist.add("Class: Fighter");
             classlist.add("Class: Rogue");
@@ -35,6 +37,8 @@ public class DnDRandomizer {
             classlist.add("Class: Bard");
                 String randomClass = classlist.get(new Random().nextInt(classlist.size()));
                 System.out.println(" Your "+ randomClass); 
+		
+		//Alingment
 		         List<String> alignmentlist = new ArrayList<>(); 
                 alignmentlist.add("Alignment: Lawful-Good");
                 alignmentlist.add("Alignment: Neutral-Good");
@@ -47,5 +51,6 @@ public class DnDRandomizer {
                 alignmentlist.add("Alignment: Chaotic-Evil");
                     String randomAlignment = alignmentlist.get(new Random() .nextInt(alignmentlist.size()));
                                        System.out.println(" Your "+ randomAlignment); 
+				       
     }
 }
