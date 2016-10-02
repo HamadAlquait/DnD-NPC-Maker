@@ -4,4 +4,4 @@ so far I have the DnDRandomizer class to make a gender, class, race, alignment. 
 
 
 #serializer and desirialazer 
-classes that right and save the character after creation.
+classes that write and read the character after creation.
