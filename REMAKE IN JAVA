@@ -74,9 +74,8 @@ System.out.println("*********************************");
                 alignmentlist.add("Alignment: Chaotic-Evil");
                     String randomAlignment = alignmentlist.get(new Random() .nextInt(alignmentlist.size()));
                                        System.out.println(" Your "+ randomAlignment); 
-         
-                    
-  List<Integer> strlist = new ArrayList<Integer>();
+         //stat generator
+  List<Integer> strlist = new ArrayList<>();
 		strlist.add(8);
 		strlist.add(9);
 		strlist.add(10);
@@ -91,9 +90,8 @@ System.out.println("*********************************");
 		strlist.add(19);
 		strlist.add(20);
                 Integer strstat = strlist.get(new Random() .nextInt(strlist.size()));
-                                       System.out.println(" STR "+ strstat); 
                                        
-            List<Integer> DEXlist = new ArrayList<Integer>();
+            List<Integer> DEXlist = new ArrayList<>();
 		DEXlist.add(8);
 		DEXlist.add(9);
 		DEXlist.add(10);
@@ -108,9 +106,8 @@ System.out.println("*********************************");
 		DEXlist.add(19);
 		DEXlist.add(20);
                            Integer dexstat = DEXlist.get(new Random() .nextInt(DEXlist.size()));
-                                       System.out.println(" DEX "+ dexstat); 
                                        
-List<Integer> CONlist = new ArrayList<Integer>();
+List<Integer> CONlist = new ArrayList<>();
 		CONlist.add(8);
 		CONlist.add(9);
 		CONlist.add(10);
@@ -125,8 +122,7 @@ List<Integer> CONlist = new ArrayList<Integer>();
 		CONlist.add(19);
 		CONlist.add(20);
                            Integer constat = CONlist.get(new Random() .nextInt(CONlist.size()));
-                                       System.out.println(" CON "+ constat);                                        
- List<Integer> INTlist = new ArrayList<Integer>();
+ List<Integer> INTlist = new ArrayList<>();
 		INTlist.add(8);
 		INTlist.add(9);
 		INTlist.add(10);
@@ -141,8 +137,7 @@ List<Integer> CONlist = new ArrayList<Integer>();
 		INTlist.add(19);
 		INTlist.add(20);
                            Integer INTstat = INTlist.get(new Random() .nextInt(INTlist.size()));
-                                       System.out.println(" INT "+ INTstat);                                          
- List<Integer> WISlist = new ArrayList<Integer>();
+ List<Integer> WISlist = new ArrayList<>();
 		WISlist.add(8);
 		WISlist.add(9);
 		WISlist.add(10);
@@ -157,8 +152,7 @@ List<Integer> CONlist = new ArrayList<Integer>();
 		WISlist.add(19);
 		WISlist.add(20);
                            Integer WISstat = WISlist.get(new Random() .nextInt(WISlist.size()));
-                                       System.out.println(" WIS "+ WISstat);                                         
- List<Integer> CHAlist = new ArrayList<Integer>();
+ List<Integer> CHAlist = new ArrayList<>();
 		CHAlist.add(8);
 		CHAlist.add(9);
 		CHAlist.add(10);
@@ -173,6 +167,12 @@ List<Integer> CONlist = new ArrayList<Integer>();
 		CHAlist.add(19);
 		CHAlist.add(20);
                            Integer CHAstat = WISlist.get(new Random() .nextInt(WISlist.size()));
-                                       System.out.println(" CHA "+ CHAstat); 
+System.out.println(" STR "+ strstat); 
+System.out.println(" DEX "+ dexstat); 
+System.out.println(" CON "+ constat); 
+System.out.println(" INT "+ INTstat);                                        
+System.out.println(" WIS "+ WISstat);                                         
+System.out.println(" CHA "+ CHAstat);  
+
  
     }}
